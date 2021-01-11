@@ -15,8 +15,65 @@
 
 .cust-img {
 	width: 50px;
-
 }
+
+.cust-fixed-overlay {
+	max-width: 40%;
+	width:40%;
+	position:absolute;
+	top:15%;
+	left:10%;
+	bottom:10%;
+	z-index: 10;
+}
+
+.cust-fixed-overlay p {
+	margin-top: 3%;
+	font-size: 3vw;
+	font-weight: bolder;
+}
+
+.cust-char-overlay {
+	max-width: 35%;
+	width:35%;
+	position:absolute;
+	top:9%;
+	left:10%;
+	bottom:10%;
+	z-index: 10;
+}
+.cust-char-overlay p {
+	
+	font-size: 3vw;
+	font-weight: bolder;
+	min-width: 99px;
+}
+.cust-imgchar-overlay {
+	max-width: 72%;
+	max-height: 72%;
+	margin-left: 10%;
+}
+
+.cust-contact-overlay {
+	max-width: 28%;
+	width:28%;
+	position:absolute;
+	top:10%;
+	left:55%;
+	bottom:10%;
+}
+
+.cust-contact-overlay p {
+	font-size: 3vw;
+	font-weight: bolder;
+}
+.cust-img-banner{
+	max-width: 85%;
+	max-height: 85%;
+	float: right;
+	margin-right: 10%;
+}
+
 
 .cust-backg-black {
 	background-color: #0b0b0b;
@@ -31,6 +88,15 @@
 	margin-top: 3%;
 	padding-top: 3%;
 	padding-bottom: 3%;
+}
+
+.cust-foot-p {
+	font-size: 13px;
+
+}
+
+footer .fa {
+	color: grey;
 }
 
 .cust-nav-social-right {

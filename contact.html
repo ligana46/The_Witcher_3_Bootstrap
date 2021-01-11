@@ -38,7 +38,12 @@
             </div>
         </nav>
         <div>
-            <img class="img-fluid" src="assets/img/bg-desktop-toussaint.7.jpg" id="image-margin">
+            <img class="img-fluid" src="assets/img/bg-desktop-toussaint.7.jpg" id="image-margin" >
+            <div class="container cust-contact-overlay">
+                <img class="cust-img-banner" src="assets/img/horse-logo.png" >
+                <p class="cust-text-banner" style="margin-top: 1%;text-align: center;">Any thoughts?</p>
+                <p class="cust-text-banner" style="margin-top: none;text-align: center;font-size: 2.5vw">Come and tell us!</p>
+            </div>
         </div>
     </header>
     <section class="cust-section">
@@ -48,26 +53,26 @@
                 <div class="row">
                     <div class="col-md-6">
                         <!-- datos personales -->
-                        <fieldset  class="form-group">
+                        <div  class="form-group">
                             <legend>Name</legend>
                             <input class="form-control form-control-md" type="text" placeholder="Name" name="name">
-                        </fieldset >
-                        <fieldset  class="form-group">
+                        </div>
+                        <div class="form-group">
                             <legend>Mail</legend>
                             <input class="form-control form-control-md" type="email" placeholder="Mail" name="mail">
-                        </fieldset >
-                        <fieldset  class="form-group">
+                        </div>
+                        <div class="form-group">
                             <legend>Message</legend>
                             <textarea class="form-control" rows="3" name="message" placeholder="Message"></textarea>
-                        </fieldset >
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <!-- datos personales -->
-                        <fieldset class="form-group">
+                        <div class="form-group">
                             <legend>Fecha de nacimiento</legend>
                             <input name="date" id="datepicker" class="form-control form-control-md" />
-                        </fieldset>
-                        <fieldset  class="form-group">
+                        </div>
+                        <div  class="form-group">
                             <legend>Sexo*</legend>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="sex" id="fmale" value="male">
@@ -81,20 +86,20 @@
                                     Woman
                                 </label>
                             </div>
-                        </fieldset>
-                        <fieldset class="form-group">
+                        </div>
+                        <div class="form-group">
                             <legend id="form-game-progress">50 % game progress</legend>
                             <input type="range" class="form-control-range" name="progress" onchange="updateTextInput(this.value)">
-                        </fieldset>
-                        <fieldset class="form-group">
+                        </div>
+                        <div class="form-group">
                             <legend>DLCs</legend>
                             <select class="custom-select custom-select-sm" name="dlc">
-                                <option selected>Open this select menu</option>
+                                <option selected>Choose yours</option>
                                 <option value="1">None</option>
-                                <option value="2">DLC1</option>
-                                <option value="3">DLC2</option>
+                                <option value="2">Blood and Wine</option>
+                                <option value="3">Hearts of Stone</option>
                             </select>
-                        </fieldset>
+                        </div>
                     </div>
                     <div class="col-md-12">
                         <button type="submit" class="btn btn-primary">Submit</button>
@@ -117,11 +122,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p>
-                        Dirección de la organización.
+                    <p class="cust-foot-p">
+                      My address, 12345 Somewhere (Nowhere) | someone&#x40;some.com
                     </p>
-                    <p>
-                        Copyright con el nombre de la organización y el año en curso en una fila.
+                    <p class="cust-foot-p">
+                      Every content, character, image, name or product included in this site are property of <br/> CD PROJECT RED&#169; 2021
                     </p>
                 </div>
                 <div class="col-md-6 cust-nav-social-right">
