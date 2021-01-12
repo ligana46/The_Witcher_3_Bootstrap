@@ -13,10 +13,6 @@
 	float: right
 }
 
-.cust-img {
-	width: 50px;
-}
-
 .cust-fixed-overlay {
 	max-width: 40%;
 	width:40%;
@@ -34,17 +30,19 @@
 }
 
 .cust-char-overlay {
-	max-width: 35%;
-	width:35%;
+	max-width: 33%;
+	min-width: 20%;
+	width:30%;
 	position:absolute;
-	top:9%;
+	text-align: center;
+	margin-top: 3%;
+	top:10%;
 	left:10%;
 	bottom:10%;
-	z-index: 10;
+	z-index: 100;
 }
 .cust-char-overlay p {
-	
-	font-size: 3vw;
+	font-size: 2.5vw;
 	font-weight: bolder;
 	min-width: 99px;
 }
@@ -56,22 +54,35 @@
 
 .cust-contact-overlay {
 	max-width: 28%;
+	min-width: 20%;
 	width:28%;
 	position:absolute;
 	top:10%;
 	left:55%;
 	bottom:10%;
+
 }
 
 .cust-contact-overlay p {
 	font-size: 3vw;
 	font-weight: bolder;
 }
+
 .cust-img-banner{
 	max-width: 85%;
 	max-height: 85%;
 	float: right;
 	margin-right: 10%;
+}
+.cust-text-banner {
+	margin-top: 1%;
+	text-align: center;
+	margin-top: none;
+	font-size: 2vw
+}
+
+.cust-banner-container {
+	position: relative;
 }
 
 
@@ -95,8 +106,16 @@
 
 }
 
-footer .fa {
+.cust-fa-social i {
 	color: grey;
+	font-size: 2rem;
+
+}
+
+.cust-fa-social li {
+	margin: 0% 8%;
+	width: 9%;
+
 }
 
 .cust-nav-social-right {
@@ -105,12 +124,20 @@ footer .fa {
 
 .cust-title-container {
 	border-bottom: 4px solid #6c6c6c;
-	margin-bottom: 5%;
+	margin: 3% 0% 8% 0%;
+}
+
+.cust-title-container p {
+	font-size: 3vw;
+	font-weight: bolder;
+
 }
 
 .cust-charBox {
 	opacity: 0.5;
+	margin:auto;
 }
+
 
 .cust-charBox-active {
 	opacity: 1;
@@ -126,7 +153,7 @@ footer .fa {
 }
 
 .cust-nav-social {
-	max-width: 65px;
+	max-width: 40%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -138,29 +165,26 @@ footer .fa {
 .cust-form-button {
 	background-color: #40433F;
 	border:none;
+	color: lightgray;
 }
 
+.cust-form-button:hover {
+	background-color: #b1810a;
+}
 
+/*fondo barra progreso*/
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 12.8px;
   cursor: pointer;
-  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  box-shadow: 0px 0px 0px #000000, 2px 2px 2px gray;
   background: #40433F;
-  border-radius: 25px;
+  border-radius: 10px;
   border: 0px solid #000101;
 }
 
 /*botoncito*/
 
-input[type=range]::-webkit-slider-thumb {
-  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-  border: 0px solid #000000;
-  height: 20px;
-  width: 39px;
-  border-radius: 7px;
-  background: red!important;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -0.2px;
+input[type=range]::-moz-range-thumb{
+	background-color:red;
 }

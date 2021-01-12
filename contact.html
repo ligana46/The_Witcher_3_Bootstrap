@@ -38,12 +38,12 @@
                 </ul>
             </div>
         </nav>
-        <div>
+        <div class="cust-banner-container">
             <img class="img-fluid" src="assets/img/bg-desktop-toussaint.7.jpg" id="image-margin" >
             <div class="container cust-contact-overlay">
                 <img class="cust-img-banner" src="assets/img/horse-logo.png" >
-                <p class="cust-text-banner" style="margin-top: 1%;text-align: center;">Any thoughts?</p>
-                <p class="cust-text-banner" style="margin-top: none;text-align: center;font-size: 2.5vw">Come and tell us!</p>
+                <p class="cust-text-banner" style="">Any thoughts? Come and tell us!</p>
+                <p class="cust-text-banner" style=""></p>
             </div>
         </div>
     </header>
@@ -70,11 +70,11 @@
                     <div class="col-md-6">
                         <!-- datos personales -->
                         <div class="form-group">
-                            <legend>Fecha de nacimiento</legend>
+                            <legend>Date of Birth</legend>
                             <input name="date" id="datepicker" class="form-control form-control-md" />
                         </div>
                         <div  class="form-group">
-                            <legend>Sexo*</legend>
+                            <legend>Gender</legend>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="sex" id="fmale" value="male">
                                 <label class="form-check-label" for="fmale">
@@ -82,15 +82,15 @@
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="sex" id="fwoman" value="woman">
+                                <input class="form-check-input" type="radio" name="sex" id="fwoman" value="female">
                                 <label class="form-check-label" for="fwoman">
-                                    Woman
+                                    Female
                                 </label>
                             </div>
                         </div>
                         <div class="form-group">
                             <legend id="form-game-progress">50 % game progress</legend>
-                            <input type="range" class="form-control-range" name="progress" onchange="updateTextInput(this.value)">
+                            <input type="range" class="form-control-range custom-range" name="progress" onchange="updateTextInput(this.value)">
                         </div>
                         <div class="form-group">
                             <legend>DLCs</legend>
@@ -131,7 +131,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 cust-nav-social-right">
-                    <ul class="nav cust-nav-social">
+                    <ul class="nav cust-nav-social cust-fa-social">
                         <li>
                             <a href="#">
                                 <i class="fa fa-facebook"></i>
