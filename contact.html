@@ -3,7 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Bootstrap 4 Navbar with Logo Image</title>
+    <meta name="author" content="Lidia Garrido">
+    <meta name="description" content="The Witcher 3 Game - Contact information">
+    <meta name="keywords" content="The Witcher 3, CDProject, GOTY, DLC">
+    
+    <title>The Witcher 3 - Contact</title>
+    
+    <link rel="icon" type="image/png" href="assets/img/png/favicon.png">
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,8 +18,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js"></script>
-
 </head>
+
 <body class="cust-backg-black">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -60,51 +66,49 @@
             <form method="post" action="none.php">
                 <div class="row">
                     <div class="col-md-6">
-                            <!-- datos personales -->
-                        <div  class="form-group">
-                            <fieldset>
-                                <legend>Name</legend>
-                                <input class="form-control form-control-md" type="text" placeholder="Name" name="name">
+                        <fieldset>
+                            <legend class="cust-legend">Contact data</legend>
+                            
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input class="form-control form-control-md" type="text" placeholder="Name" name="name" id="name" required>
                             </div>
                             <div class="form-group">
-                                <legend>Mail</legend>
-                                <input class="form-control form-control-md" type="email" placeholder="Mail" name="mail">
+                                <label for="mail">Mail</label>
+                                <input class="form-control form-control-md" type="email" placeholder="Mail" name="mail" id="mail" required>
                             </div>
                             <div class="form-group">
-                                <legend>Message</legend>
-                                <textarea style="height: 121px;" class="form-control" rows="3" name="message" placeholder="Message"></textarea>
+                                <label for="msg">Message</label>
+                                <textarea style="height: 123px;" class="form-control" rows="3" name="message" placeholder="Message" id="msg" required></textarea>
                             </div>
                         </fieldset>
                     </div>
                     <div class="col-md-6">
                         <fieldset>
-                            <!-- datos personales -->
+                            <legend class="cust-legend">Personal Data</legend>
                             <div class="form-group">
-                                <legend>Date of Birth</legend>
-                                <input name="date" id="datepicker" class="form-control form-control-md" />
+                                <label for="datepicker">Date of Birth</label>
+                                <input name="date" id="datepicker" class="form-control form-control-md" required />
                             </div>
-                            <div  class="form-group">
-                                <legend>Gender</legend>
+                            <div class="form-group">
+                                <label>Gender</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="sex" id="fmale" value="male">
-                                    <label class="form-check-label" for="fmale">
-                                        Male
-                                    </label>
+                                    <input class="form-check-input" type="radio" name="sex" id="male" value="male">
+                                    <label class="form-check-label cust-check" for="male">Male</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="sex" id="fwoman" value="female">
-                                    <label class="form-check-label" for="fwoman">
-                                        Female
-                                    </label>
+                                    <input class="form-check-input" type="radio" name="sex" id="fmale" value="female">
+                                    <label class="form-check-label cust-check" for="fmale">Female</label>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <legend id="form-game-progress">50 % game progress</legend>
+                                <label id="form-game-progress">50 % game progress</label>
                                 <input type="range" class="form-control-range custom-range" name="progress" onchange="updateTextInput(this.value)">
+                                                    <!--id misplaced???-->
                             </div>
                             <div class="form-group">
-                                <legend>DLCs</legend>
-                                <select class="custom-select custom-select-sm" name="dlc">
+                                <label for="dlc">DLCs</label>
+                                <select class="custom-select custom-select-sm" name="dlc" id="dlc">
                                     <option selected>Choose yours</option>
                                     <option value="1">None</option>
                                     <option value="2">Blood and Wine</option>
@@ -118,18 +122,16 @@
                         <button type="reset" class="btn btn-primary cust-form-button" onclick="updateTextInput(50)">Reset</button>
                     </div>
                 </div>
-
             </form>
-
         </div>
     </section>
-    <section class="cust-section  cust-center-elements">
+    <div class="cust-section cust-center-elements">
         <div class="container jumbotron cust-backg-grey">
             <p>Or find us at:</p>
             <p>My address, 12345 Somewhere (Nowhere)</p>
             <p>someone@some.com</p>
         </div>
-    </section>
+    </div>
     <footer class="bg-dark cust-foot">
         <div class="container">
             <div class="row">

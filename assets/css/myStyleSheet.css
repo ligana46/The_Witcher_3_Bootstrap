@@ -60,7 +60,6 @@
 	top:10%;
 	left:55%;
 	bottom:10%;
-
 }
 
 .cust-carousel-logo{
@@ -78,6 +77,7 @@
 	float: right;
 	margin-right: 10%;
 }
+
 .cust-text-banner {
 	margin-top: 1%;
 	text-align: center;
@@ -119,19 +119,16 @@
 
 .cust-foot-p {
 	font-size: 13px;
-
 }
 
 .cust-fa-social i {
 	color: grey;
 	font-size: 2rem;
-
 }
 
 .cust-fa-social li {
 	margin: 0% 8%;
 	width: 9%;
-
 }
 
 .cust-nav-social-right {
@@ -146,14 +143,12 @@
 .cust-title-container h2 {
 	font-size: 2.5vw;
 	font-weight: bolder;
-
 }
 
 .cust-charBox {
 	opacity: 0.5;
 	margin:auto;
 }
-
 
 .cust-charBox-active {
 	opacity: 1;
@@ -192,7 +187,22 @@
 	background-color: #b1810a;
 }
 
-/*fondo barra progreso*/
+.cust-legend {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 3%;
+}
+
+.form-group label {
+	font-size: 20px;
+}
+
+.cust-check {
+	font-size: 18px!important;
+}
+
+/*Progress bar background*/
+
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 12.8px;
@@ -203,8 +213,7 @@ input[type=range]::-webkit-slider-runnable-track {
   border: 0px solid #000101;
 }
 
-/*botoncito*/
-
+/*Progress dot*/
 
 input[type='range']:focus {
 	outline: none;
