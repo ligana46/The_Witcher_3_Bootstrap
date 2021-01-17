@@ -48,9 +48,9 @@
             </div>
         </nav>
         <div class="cust-banner-container">
-            <img class="img-fluid" src="assets/img/bg-desktop-toussaint.7.jpg" id="image-margin" alt="Toussaint landscape">
+            <img class="img-fluid" src="assets/img/bg-desktop-mobile.jpg" id="image-margin" alt="Toussaint landscape">
             <div class="container cust-contact-overlay">
-                <img class="cust-img-banner" src="assets/img/horse-logo.png" alt="Geralt on horse logo">
+                <img class="cust-img-banner" src="assets/img/witcher-3-geralt-art.png" alt="Geralt logo">
                 <p class="cust-text-banner">Any thoughts? Come and tell us!</p>
                 <p class="cust-text-banner"></p>
             </div>
@@ -70,15 +70,15 @@
                             <legend class="cust-legend">Contact data</legend>
                             
                             <div class="form-group">
-                                <label for="name">Name</label>
+                                <label for="name">Name*</label>
                                 <input class="form-control form-control-md" type="text" placeholder="Name" name="name" id="name" required>
                             </div>
                             <div class="form-group">
-                                <label for="mail">Mail</label>
+                                <label for="mail">Mail*</label>
                                 <input class="form-control form-control-md" type="email" placeholder="Mail" name="mail" id="mail" required>
                             </div>
                             <div class="form-group">
-                                <label for="msg">Message</label>
+                                <label for="msg">Message*</label>
                                 <textarea style="height: 123px;" class="form-control" rows="3" name="message" placeholder="Message" id="msg" required></textarea>
                             </div>
                         </fieldset>
@@ -87,7 +87,7 @@
                         <fieldset>
                             <legend class="cust-legend">Personal Data</legend>
                             <div class="form-group">
-                                <label for="datepicker">Date of Birth</label>
+                                <label for="datepicker">Date of Birth*</label>
                                 <input name="date" id="datepicker" class="form-control form-control-md" required />
                             </div>
                             <div class="form-group">
@@ -102,8 +102,8 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label id="form-game-progress">50 % game progress</label>
-                                <input type="range" class="form-control-range custom-range" name="progress" onchange="updateTextInput(this.value)">
+                                <label for="range" id="form-game-progress">50 % game progress</label>
+                                <input type="range" class="form-control-range custom-range" name="progress" id="range" onchange="updateTextInput(this.value)">
                                                     <!--id misplaced???-->
                             </div>
                             <div class="form-group">
@@ -122,6 +122,7 @@
                         <button type="reset" class="btn btn-primary cust-form-button" onclick="updateTextInput(50)">Reset</button>
                     </div>
                 </div>
+                <p id="cust-note"><strong>Note:</strong> * indicates required fields </p>
             </form>
         </div>
     </section>
@@ -147,22 +148,22 @@
                     <ul class="nav cust-nav-social cust-fa-social">
                         <li>
                             <a href="#">
-                                <i class="fa fa-facebook"></i>
+                                <span class="fa fa-facebook"></span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa fa-twitter"></i>
+                                <span class="fa fa-twitter"></span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa fa-google-plus"></i>
+                                <span class="fa fa-google-plus"></span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa fa-pinterest"></i>
+                                <span class="fa fa-pinterest"></span>
                             </a>
                         </li>
                     </ul>
@@ -180,5 +181,6 @@
             document.getElementById('form-game-progress').innerHTML = val + "% game progress: "
         }
     </script>
+    <noscript>Your browser does not support JavaScript!</noscript>
 </body>
 </html>
