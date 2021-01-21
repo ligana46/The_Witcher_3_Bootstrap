@@ -35,24 +35,26 @@
 	font-weight: bolder;
 }
 
-.cust-char-overlay {
+.cust-imgfixed-overlay {
+	max-height: 70%;
+}
 
+.cust-purch-overlay {
 	min-width: 20%;
 	width:40%;
 	position:absolute;
-	text-align: center;
 	margin-top: 3%;
 	top:10%;
 	left:10%;
 	bottom:10%;
 	z-index: 100;
 }
-.cust-char-overlay p {
+.cust-purch-overlay p {
 	font-size: 3vw;
 	font-weight: bolder;
 
 }
-.cust-imgchar-overlay {
+.cust-imgpurch-overlay {
 	max-width: 72%;
 	max-height: 72%;
 	margin-left: 10%;
@@ -68,26 +70,22 @@
 	bottom:10%;
 }
 
-.cust-carousel-logo{
-	max-height: 70%;
-}
-
 .cust-contact-overlay p {
 	font-size: 3vw;
 	font-weight: bolder;
 }
 
-.cust-img-banner{
+.cust-imgus-overlay {
 	max-width: 85%;
 	max-height: 85%;
 	float: right;
 	margin-right: 10%;
+	margin-top: -1%;
 }
 
-.cust-text-banner {
-	margin-top: 1%;
+.cust-text-overlay {
+	margin-top: 0.5%;
 	text-align: center;
-	margin-top: 0;
 	font-size: 2vw;
 }
 
@@ -114,7 +112,7 @@
 	color: #8c8c8c;
 }
 
-.cust-section {
+.cust-mart-3 {
 	margin-top: 3%;
 }
 
@@ -151,21 +149,21 @@
 	font-weight: bolder;
 }
 
-.cust-charBox {
+.cust-purchBox {
 	opacity: 0.5;
 	margin:auto;
 }
 
-.cust-charBox-active {
+.cust-purchBox-active {
 	opacity: 1;
 }
 
-.cust-charBox:hover {
+.cust-purchBox:hover {
 	cursor: pointer;
 	opacity: 1;
 }
 
-.cust-charBox-info {
+.cust-purchBox-info {
 	display: none;
 }
 
